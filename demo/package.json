@@ -1,0 +1,25 @@
+{
+  "name": "itcast-fe-builder-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "node ./../build init",
+    "start": " cross-env NODE_ENV=development API_ENV=develop node ./../build dev",
+    "build:develop": " cross-env NODE_ENV=production API_ENV=develop node ./../build pro",
+    "build:testing": " cross-env NODE_ENV=production API_ENV=testing node ./../build pro",
+    "build:staging": " cross-env NODE_ENV=production API_ENV=staging node ./../build pro",
+    "build:master": " cross-env NODE_ENV=production API_ENV=production node ./../build pro",
+    "build:production": "npm run build:master",
+    "build": "npm run build:production",
+    "format":"node ./../build formatAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fe-builder-cli": "^1.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

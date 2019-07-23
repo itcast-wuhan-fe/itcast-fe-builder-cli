@@ -1,0 +1,27 @@
+{
+  "name": "itcast-fe-builder-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "simple": "./build/index.js"
+  },
+  "scripts": {
+    "pre": "tsc -p tsconfig.json",
+    "start": "npm run pre && node build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ericyang89",
+  "license": "ISC",
+  "dependencies": {
+    "@types/yargs": "^13.0.0",
+    "typescript": "^3.5.3",
+    "yargs": "^13.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.8",
+    "@types/webpack": "^4.32.0",
+    "@types/webpack-dev-server": "^3.1.7"
+  }
+}
