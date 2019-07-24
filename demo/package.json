@@ -12,7 +12,8 @@
     "build:master": " cross-env NODE_ENV=production API_ENV=production node ./../build pro",
     "build:production": "npm run build:master",
     "build": "npm run build:production",
-    "format":"node ./../build formatAll"
+    "format":"node ./../build formatAll",
+    "build:cli":"cd .. && npm run pre && cd demo "
   },
   "keywords": [],
   "author": "",
